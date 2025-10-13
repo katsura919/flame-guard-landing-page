@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Camera, Smartphone, AlertTriangle, Clock, MapPin, Flame, CheckCircle, Download, Play, Star } from "lucide-react";
+import { ChatEmbedWidget } from "enquiro-chat-widget";
 
 export default function Home() {
   return (
@@ -281,6 +282,13 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <ChatEmbedWidget 
+        businessSlug="enquiro-business" 
+        position="bottom-right"
+        primaryColor="#3b82f6"
+        title="Chat with us"
+      />
     </div>
   );
 }
